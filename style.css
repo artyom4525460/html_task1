@@ -168,8 +168,7 @@ section{
 }
 
 .popular .popular-item{
-    display: flex;
-    flex-direction: row;
+    
 }
 
 .popular .top-part{
