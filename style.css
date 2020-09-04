@@ -1,0 +1,193 @@
+/*
+    DEFAULT
+*/
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #fdfdfd;
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 0 50px;
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+}
+
+.title{
+    font-size: 60px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/*
+    HEADER
+*/
+
+.header{
+    background-color: #2f89fc;
+    padding-top: 170px;
+    width: 100%;
+}
+
+.header .menu{
+    display: flex;
+    align-items: center;
+}
+
+.header .menu .menu-button{
+
+}
+
+.header .menu .header-title{
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-left: 45px;
+    font-weight: bold;
+}
+
+.header .search{
+    margin-top: 65px;
+    display: block;
+    position: relative;
+    width: 100%;
+} 
+
+.header .search img{
+    position: absolute;
+    left: 62px;
+    top: 55px;
+}
+
+.header .search input{
+    height: 150px;
+    width: 100%;
+    padding: 50px 50px 50px 145px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: -65px;
+    font-size: 40px;
+}
+::placeholder{
+    font-size: 40px;
+    color: #737b80;
+    font-family: "Gilroy", Arial, Helvetica, sans-serif;
+}
+
+/*
+    SLIDER
+*/
+
+.slider{
+    padding-top: 175px;
+    padding-bottom: 50px;
+}
+
+/*
+    CATEGORY
+*/
+
+.categories{
+
+}
+
+.categories .categories-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.categories .categories-header .categories-title{
+}
+
+.categories .categories-header .categories-view-all{
+    font-size: 40px;
+    color: #ff9878;
+    font-weight: 500;
+}
+
+.categories .categories-inner{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.categories .categories-block{
+    min-width: 430px;
+    padding: 45px 30px 45px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories .categories-block .category-item{
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.categories .categories-block img{
+    width: 100%;
+    height: 100%;
+}
+
+.categories .categories-block .shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 45px;
+}
+/*
+    POPULAR
+*/
+
+.popular{
+
+}
+
+.popular .popular-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.popular .popular-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.popular .top-part{
+
+}
+
+.popular .top-part img{
+
+}
+
+.popular .top-part .popular-item-category{
+
+}
+
+.popular .top-part .popular-item-distance{
+
+}
+
+.popular .bottom-part{
+
+}
