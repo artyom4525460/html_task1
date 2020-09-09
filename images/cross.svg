@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<path id="Path 328" fill-rule="evenodd" class="shp0" d="M50 25C50 38.81 38.81 50 25 50C11.19 50 0 38.81 0 25C0 11.19 11.19 0 25 0C38.81 0 50 11.19 50 25ZM29.09 25L36.23 17.85L32.15 13.77L25 20.91L17.85 13.77L13.77 17.85L20.91 25L13.77 32.15L17.85 36.23L25 29.09L32.15 36.23L36.23 32.15L29.09 25Z" />
+</svg>

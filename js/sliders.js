@@ -31,32 +31,11 @@ $('#slider-popular').slick({
     nextArrow: false
 })
 
-function showMenu() {
-    alert("show menu")
-}
-
-function getSearch(event){
-    if(event == 'search' || event.keyCode == 13){
-        let category = ['grocery', 'pharmacy']
-        let input = $('input[name="search"]').val()
-        if(category.includes(input)){
-            alert(input)
-        }
-        else{
-            alert(false)
-        }
-    }
-}
-
-function viewCategory(){
-    alert("View Category")
-}
-
-$('.category-item').click(function(){
-    let category = $(this).find('.category-name').html().trim()
-    alert(category)
+$('#top-full-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow: false,
+    nextArrow: false
 })
-
-function onCall(){
-    alert('call now')
-}

@@ -1,0 +1,110 @@
+/*
+    Info Section
+*/
+
+.info-section{
+    position: relative;
+    padding-top: 50px;
+    color: #292929;
+    border-radius: 65px;
+    margin-top: -53px;
+    @media screen and (max-width: $max-width){
+        padding-top: 4.44vw;
+        border-radius: 5.77vw;
+        margin-top: -4.71vw;
+    }
+    .top-part{
+        padding-bottom: 43px;
+        @media screen and (max-width: $max-width){
+            padding-bottom: 6.48vw;
+        }
+        .title{
+            color: #292929;
+        }
+        .location{
+            font-size: 40px;
+            font-weight: 500;
+            opacity: 0.8;
+            display: flex;
+            align-content: center;
+            margin: 20px 0;
+            @media screen and (max-width: $max-width){
+                font-size: 3.55vw;
+                margin: 1.77vw 0;
+            }
+            img{
+                width: 32px;
+                height: 39px;
+                margin-right: 12px;
+                @media screen and (max-width: $max-width){
+                    width: 2.84vw;
+                    height: 3.46vw;
+                    margin-right: 1vw;
+                }
+            }
+        }
+        .distance{
+            background-color: $blue;
+            border-radius: 10px;
+            padding: 18px 20px;
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            width: fit-content;
+            margin: 30px 0;
+            @media screen and (max-width: $max-width){
+                border-radius: 0.88vw;
+                padding: 1.6vw 1.77vw;
+                font-size: 2.66vw; 
+                margin: 2.66vw 0;
+            }
+        }
+        .info-section-call-button{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            @media screen and (max-width: $max-width){
+                top: 4.44vw;
+                right: 4.44vw;
+            }
+        }
+    }
+
+    .bottom-part{
+        padding: 55px 0 0;
+        @media screen and (max-width: $max-width){
+            padding: 4.88vw 0 0;
+        }
+        .title{
+            font-size: 50px;
+            color: #292929;
+            @media screen and (max-width: $max-width){
+                font-size: 4.44vw;
+            }
+        }
+        .description{
+            font-size: 40px;
+            line-height: 60px;
+            color: #292929;
+            opacity: 0.8;
+            padding-top: 15px;
+            @media screen and (max-width: $max-width){
+                font-size: 3.55vw;
+                line-height: 5.33vw;
+                padding-top: 1.33vw;
+            }
+        }
+    }
+
+    hr{
+        border: 0;
+        border-top: 5px solid #edf0f2;
+        margin: 0;
+        margin-left: -55px;
+        margin-right: -55px;
+        @media screen and (max-width: $max-width){
+            margin-left: -4.88vw;
+            margin-right: -4.88vw;
+        }
+    }
+}
