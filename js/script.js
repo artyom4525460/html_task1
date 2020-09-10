@@ -27,3 +27,11 @@ $('.category-item').click(function(){
 function onCall(){
     alert('call now')
 }
+
+function onHideModal(selector){
+    $(selector).hide();
+}
+
+function onShowModal(selector){
+    $(selector).show();
+}
