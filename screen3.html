@@ -12,7 +12,7 @@
         <section class="header">
             <div class="title">
                 <div class="arrow-header">
-                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('Return Button Active')">
+                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('show menu')">
                 </div>
                 <div class="location">
                     <img src="./images/location_white.svg" class="marker-img" alt="location_white">
@@ -23,21 +23,21 @@
                 </div>
             </div>
             <div class="tabs">
-                <div class="tab">One Call</div>
-                <div class="tab active">Near Me</div>
-                <div class="tab">Promotions</div>
+                <div class="tab" onclick="alert('Promotions Tab')">One Call</div>
+                <div class="tab active" onclick="alert('Near Me Tab')">Near Me</div>
+                <div class="tab" onclick="alert('One Call Tab')">Promotions</div>
             </div>
         </section>
         <section class="map-section">
             <div class="controls-block">
                 <div class="search">
-                    <img src="./images/Search.svg" alt="search" id="search-button" onclick="getSearch('search')">
-                    <input type="text" name="search" placeholder="Search here" onkeypress="getSearch(event)">
-                    <img src="./images/cross.svg" alt="cross" id="cross-button" onclick="">
+                    <img src="./images/Search.svg" alt="search" id="search-button">
+                    <input type="text" name="search" placeholder="Search here">
+                    <img src="./images/cross.svg" alt="cross" id="cross-button">
                 </div>
                 <div class="filter">
-                    <a href="" id="filter-button">
-                        <img src="./images/filter.svg" alt="filter" onclick="">
+                    <a href="" id="filter-button" onclick="alert('Show Filter')">
+                        <img src="./images/filter.svg" alt="filter">
                     </a>
                 </div>
             </div>

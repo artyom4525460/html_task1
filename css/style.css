@@ -7,7 +7,12 @@ body {
   margin: 0;
   background-color: #fdfdfd;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-size: 40px;
+  color: #292929; }
+  @media screen and (max-width: 1125px) {
+    body {
+      font-size: 3.55vw; } }
 
 html, body {
   max-width: 100% !important;
@@ -40,6 +45,10 @@ section {
 
 img {
   max-width: 100%; }
+
+a {
+  color: #2f89fc;
+  text-decoration: none; }
 
 /*
     Controls
@@ -101,6 +110,29 @@ input {
       padding: 4.44vw;
       border-radius: 1.77vw;
       font-size: 3.55vw; } }
+
+::placeholder {
+  font-size: 40px;
+  color: #737b80;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif; }
+  @media screen and (max-width: 1125px) {
+    ::placeholder {
+      font-size: 3.55vw; } }
+
+input.number-input {
+  width: 153px;
+  height: 162px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  font-size: 80px;
+  text-align: center; }
+  @media screen and (max-width: 1125px) {
+    input.number-input {
+      width: 13.6vw;
+      height: 14.6vw;
+      border-radius: 0.88vw;
+      font-size: 7.11vw; } }
 
 ::placeholder {
   font-size: 40px;
@@ -299,6 +331,10 @@ button {
       font-size: 3.11vw;
       margin-top: 3.11vw; } }
 
+.form .field-numbers {
+  display: flex;
+  justify-content: space-between; }
+
 .photo-block {
   width: 324px;
   height: 324px;
@@ -356,6 +392,77 @@ button {
   @media screen and (max-width: 1125px) {
     .address-field .get-location-button {
       margin-top: -5.33vw; } }
+
+.keyboard {
+  background-color: #d2d5db;
+  padding: 10px 10px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px; }
+  @media screen and (max-width: 1125px) {
+    .keyboard {
+      margin-top: 8.88vw;
+      padding: 0.88vw 0.88vw 0; } }
+  .keyboard .keyboard-button {
+    width: calc(33% - 20px);
+    height: 162px;
+    margin: 10px 0;
+    border-radius: 5px;
+    filter: drop-shadow(0px 1px 0px rgba(20, 20, 20, 0.45));
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (max-width: 1125px) {
+      .keyboard .keyboard-button {
+        width: calc(33% - 1.77vw);
+        height: 14.4vw;
+        margin: 0.88vw 0;
+        border-radius: 0.44vw; } }
+    .keyboard .keyboard-button .num {
+      font-size: 75px;
+      letter-spacing: 1px;
+      color: #000000;
+      font-weight: 500;
+      font-family: "S FPro Display", Arial, Helvetica, sans-serif; }
+      @media screen and (max-width: 1125px) {
+        .keyboard .keyboard-button .num {
+          font-size: 6.66vw; } }
+    .keyboard .keyboard-button .text {
+      font-size: 30px;
+      letter-spacing: 6px;
+      color: #000000;
+      font-weight: bold;
+      font-family: "S FPro Text", Arial, Helvetica, sans-serif; }
+      @media screen and (max-width: 1125px) {
+        .keyboard .keyboard-button .text {
+          font-size: 2.66vw;
+          letter-spacing: 0.53vw; } }
+    .keyboard .keyboard-button.no-background {
+      background: none;
+      filter: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .keyboard .keyboard-button.no-background img {
+        margin: 0 10px; }
+        @media screen and (max-width: 1125px) {
+          .keyboard .keyboard-button.no-background img {
+            margin: 0 0.88vw; } }
+  .keyboard .left-button img {
+    width: 43px; }
+    @media screen and (max-width: 1125px) {
+      .keyboard .left-button img {
+        width: 3.82vw; } }
+  .keyboard .right-button img {
+    width: 81px; }
+    @media screen and (max-width: 1125px) {
+      .keyboard .right-button img {
+        width: 7.2vw; } }
 
 .header {
   background-color: #2f89fc;
@@ -845,6 +952,19 @@ button {
         .profile-body .field-button .field-button-text {
           margin-bottom: 4.44vw;
           font-size: 3.11vw; } }
+  .profile-body .text-block {
+    padding: 15px 0 90px; }
+    @media screen and (max-width: 1125px) {
+      .profile-body .text-block {
+        padding: 1.33vw 0 8vw; } }
+  .profile-body .text-block-center {
+    text-align: center;
+    width: 100%; }
+  .profile-body .text {
+    padding: 20px 0; }
+    @media screen and (max-width: 1125px) {
+      .profile-body .text {
+        padding: 1.77vw 0; } }
 
 .account-header {
   padding-bottom: 80px; }
@@ -856,6 +976,12 @@ button {
     @media screen and (max-width: 1125px) {
       .account-header .field-button {
         margin-top: 7.11vw; } }
+
+.verify-body .field-button {
+  margin: 50px 0 100px; }
+  @media screen and (max-width: 1125px) {
+    .verify-body .field-button {
+      margin: 4.44vw 0 8.88vw; } }
 
 .modal {
   position: fixed;
@@ -897,7 +1023,7 @@ button {
       bottom: -115px; }
       @media screen and (max-width: 1125px) {
         .modal .request-modal .controls {
-          bottom: -8vw; } }
+          bottom: -11vw; } }
   .modal .request-modal-body {
     background-image: url("../images/background-modal-1-button.png"); }
   .modal .request-block-modal {
@@ -983,7 +1109,7 @@ button {
       margin: 0 83px; }
       @media screen and (max-width: 1125px) {
         .modal .controls .button {
-          margin: 0 7.1vw; } }
+          margin: 0 7.7vw; } }
       .modal .controls .button img {
         width: 50px; }
         @media screen and (max-width: 1125px) {

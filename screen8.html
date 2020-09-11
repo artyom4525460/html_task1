@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Screen5</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+        <meta charset="utf-8">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header profile-header account-header">
+            <div class="title">
+                <div class="arrow-header">
+                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('Return Button')">
+                </div>
+            </div>
+        </section>
+        <section class="profile-body account-body verify-body">
+            <div class="title">
+                User Profile
+            </div>
+            <div class="text-block">
+                <div class="text">SMS message has been sent on</div>
+                <a class="text phone-text" href="">+1 856-548-5623</a>
+            </div>
+            <div class="form">
+                <div class="field field-numbers">
+                    <input type="text" placeholder="" name="first_number" class="number-input" maxlength="1" value="*">
+                    <input type="text" placeholder="" name="second_number" class="number-input" maxlength="1" value="*">
+                    <input type="text" placeholder="" name="third_number" class="number-input" maxlength="1" value="*">
+                    <input type="text" placeholder="" name="fourth_number" class="number-input" maxlength="1" value="*">
+                    <input type="text" placeholder="" name="fifth_number" class="number-input" maxlength="1" value="*">
+                    <input type="text" placeholder="" name="last_number" class="number-input" maxlength="1" value="*">
+                </div>
+                <div class="field field-button">
+                    <button class="primary-button" onclick="alert('Code Verified')">
+                        Verify
+                    </button>
+                </div>
+            </div>
+            <div class="text-block text-block-center">
+                <div class="text">Did't recieve code? </div>
+                <a class="text phone-text" href="" onclick="alert('Code Send Again')">Resend SMS</a>
+            </div>
+        </section>
+        <section class="keyboard">
+            <div class="keyboard-button">
+                <div class="num">1</div>
+                <div class="text"></div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">2</div>
+                <div class="text">ABC</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">3</div>
+                <div class="text">DEF</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">4</div>
+                <div class="text">GHI</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">5</div>
+                <div class="text">JKL</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">6</div>
+                <div class="text">MNO</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">7</div>
+                <div class="text">PQRS</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">8</div>
+                <div class="text">TUV</div>
+            </div>
+            <div class="keyboard-button">
+                <div class="num">9</div>
+                <div class="text">WXYZ</div>
+            </div>
+            <div class="keyboard-button no-background left-button">
+                <img src="./images/Plus.svg" alt="">
+                <img src="./images/Asterisk.svg" alt="">
+                <img src="./images/Hash.svg" alt="">
+            </div>
+            <div class="keyboard-button">
+                <div class="num">0</div>
+            </div>
+            <div class="keyboard-button no-background right-button">
+                <img src="./images/delete.svg" alt="">
+            </div>
+        </section>
+        <script defer
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+        <script defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script defer src="./js/script.js"></script>
+    </body>
+</html>

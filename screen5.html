@@ -10,12 +10,12 @@
         <section class="header profile-header">
             <div class="title">
                 <div class="arrow-header">
-                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('Return Button Active')">
+                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('show previous screen')">
                 </div>
             </div>
             <div class="tabs">
-                <div class="tab active">User</div>
-                <div class="tab">My Business</div>
+                <div class="tab active" onclick="alert('Update user profile')">User</div>
+                <div class="tab" onclick="alert('My Business Profile')">My Business</div>
             </div>
         </section>
         <section class="profile-body">
@@ -24,7 +24,7 @@
             </div>
             <div class="form">
                 <div class="field">
-                    <div class="photo-block">
+                    <div class="photo-block" onclick="alert('Upload any profile Photo from device.')">
                         <img src="./images/profile.svg" alt="Proile">
                         <span>Update Photo</span>
                     </div>
@@ -37,12 +37,12 @@
                 </div>
                 <div class="field address-field">
                     <input type="text" placeholder="Address*" name="address">
-                    <button class="get-location-button">
+                    <button class="get-location-button" onclick="alert('Take Current Location From Google map with latitude -longitude')">
                         <img src="./images/target.svg" alt="Target"> Save current location as my Home
                     </button>
                 </div>
                 <div class="field field-button">
-                    <button class="primary-button">
+                    <button class="primary-button"onclick="alert('update profile successfully')">
                         Update Profile
                     </button>
                 </div>

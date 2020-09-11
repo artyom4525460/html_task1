@@ -45,4 +45,23 @@ function initMap() {
     map: map,
     icon: './images/marker6.png',
   });
+
+  marker1.addListener("click", () => {
+    alert('Image selected');
+  });
+  marker2.addListener("click", () => {
+    alert('Image selected');
+  });
+  marker3.addListener("click", () => {
+    alert('Image selected');
+  });
+  marker4.addListener("click", () => {
+    alert('Image selected');
+  });
+  marker5.addListener("click", () => {
+    alert('Image selected');
+  });
+  marker6.addListener("click", () => {
+    alert('Image selected');
+  });
 }

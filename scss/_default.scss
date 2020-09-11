@@ -13,6 +13,11 @@ body{
     background-color: #fdfdfd;
     font-family: "Gilroy", Arial, Helvetica, sans-serif;
     overflow-x: hidden;
+    font-size: 40px;
+    color: #292929;
+    @media screen and (max-width: $max-width){
+        font-size: 3.55vw;
+    }
 }
 html, body {
     max-width: 100% !important;
@@ -50,4 +55,9 @@ section{
 
 img{
     max-width: 100%;
+}
+
+a{
+    color: $blue;
+    text-decoration: none;
 }
