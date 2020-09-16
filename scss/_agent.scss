@@ -231,27 +231,6 @@
                         padding-bottom: 3.28vw;
                     }
                 }
-                .parameters{
-                    display: flex;
-                    .parameter{
-                        font-size: 40px;
-                        padding-right: 80px;
-                        display: flex;
-                        align-items: center;
-                        @media screen and (max-width: $max-width){
-                            font-size: 3.55vw;
-                            padding-right: 7.11vw;
-                        }
-                        img{
-                            max-height: 50px;
-                            margin-right: 20px;
-                            @media screen and (max-width: $max-width){
-                                max-height: 4.44vw;
-                                margin-right: 1.77vw;
-                            }
-                        }
-                    }
-                }
                 .detail{
                     cursor: pointer;
                     position: absolute;
@@ -267,6 +246,29 @@
                         padding: 2.22vw 4vw;
                     }
                 }
+            }
+        }
+    }
+}
+
+
+.parameters{
+    display: flex;
+    .parameter{
+        font-size: 40px;
+        padding-right: 80px;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: $max-width){
+            font-size: 3.55vw;
+            padding-right: 7.11vw;
+        }
+        img{
+            max-height: 50px;
+            margin-right: 20px;
+            @media screen and (max-width: $max-width){
+                max-height: 4.44vw;
+                margin-right: 1.77vw;
             }
         }
     }
@@ -299,3 +301,120 @@
         }
     }
 }
+
+.agent-slider{
+    .top-full-slider {
+        .slick-dots {
+            bottom: 100px;
+            @media screen and (max-width: $max-width){
+                bottom: 8.88vw;
+            }
+        }
+    }
+}
+.agent-info-section {
+    padding-top: 5px;
+    @media screen and (max-width: $max-width){
+        padding-top: 0.44vw;
+    }
+    .top-part {
+        display: flex;
+        justify-content: space-between;
+        .info-section-call-button{
+            top: 0;
+            transform: translate(0, -50%);
+        }
+
+        .top-right-part{
+            display: flex;
+            align-items: center;
+            color: $blue;
+            font-size: 60px;
+            font-weight: bold;
+            @media screen and (max-width: $max-width){
+                font-size: 5.33vw;
+            }
+        }
+    }
+    hr{
+        border-top: 3px solid #edf0f2;
+        @media screen and (max-width: $max-width){
+            border-top: 0.26vw solid #edf0f2;
+        }
+    }
+
+    .bottom-part{
+        padding: 0;
+        .description{
+            padding-bottom: 85px;
+            @media screen and (max-width: $max-width){
+                padding-bottom: 7.55vw;
+            }
+        }
+        .parameters{
+            padding: 35px 0;
+            @media screen and (max-width: $max-width){
+                padding: 3.11vw 0;
+            }
+            .parameter{
+                padding-right: 85px;
+                @media screen and (max-width: $max-width){
+                    padding-right: 7.55vw; 
+                }
+                img{
+                    max-height: 85px; 
+                    @media screen and (max-width: $max-width){
+                        max-height: 7.55vw; 
+                    }
+                }
+                .name{
+                    font-size: 40px;
+                    @media screen and (max-width: $max-width){
+                        font-size: 3.55vw;
+                    }
+                }
+                .number{
+                    font-size: 60px;
+                    font-weight: bold;
+                    @media screen and (max-width: $max-width){
+                        font-size: 5.33vw;
+                    }
+                }
+            }
+        }
+        .list{
+            margin: 30px 0;
+            padding-left: 0;
+            @media screen and (max-width: $max-width){
+                margin: 2.66vw 0;
+            }
+            li{
+                padding: 30px 0 30px 40px;
+                font-size: 40px;
+                list-style-type: none;
+                position: relative;
+                @media screen and (max-width: $max-width){
+                    padding: 2.66vw 0 2.44vw 3.66vw;
+                    font-size: 3.66vw;
+                }
+                &:before{
+                    content: "";
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 9px;
+                    background-color: #dfdfdf;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translate(0, -50%);
+                    @media screen and (max-width: $max-width){
+                        width: 1.6vw;
+                        height: 1.6vw;
+                        border-radius: 0.8vw;
+                    }
+                }
+            }
+        }
+    }
+}
+    
