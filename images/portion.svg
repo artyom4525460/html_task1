@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55 55" width="55" height="55">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #292929;stroke-width: 5 } 
+	</style>
+	<g id="Group 328" style="opacity: 0.898">
+		<path id="Rectangle 290" class="shp0" d="M5 0L50 0C52.76 0 55 2.23 55 5L55 50C55 52.76 52.76 55 50 55L5 55C2.23 55 0 52.76 0 50L0 5C0 2.23 2.23 0 5 0Z" />
+		<path id="Path 394" class="shp0" d="M27.53 3.5L27.53 51.92L27.53 3.5Z" />
+		<path id="Path 395" class="shp0" d="M28.58 27.69L3.33 27.69L28.58 27.69Z" />
+	</g>
+</svg>

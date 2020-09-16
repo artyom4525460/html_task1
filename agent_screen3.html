@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Agent Screen 3</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no">
+        <meta charset="utf-8">
+        <link href="./css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header account-header surveryor-header">
+            <div class="title">
+                <div class="arrow-header">
+                    <img src="./images/arrow-left.svg" alt="arrow-left" onclick="alert('Return Button')">
+                </div>
+                Available House
+            </div>
+        </section>
+        <section class="profile-body agent-body agent-top-block">
+            <div class="select-block">
+                <div class="grey-select select-button" onclick="onShowModal('#phase-modal')">
+                    DHA Phase 5
+                </div>
+            </div>
+            <div class="title">
+                Available House For Rent
+            </div>
+            <div class="filter-block">
+                <div class="filter-item">
+                    <div class="name">Price Range</div>
+                    <span>25,000</span> - <span>50,000</span>
+                </div>
+                <div class="filter-item">
+                    <div class="name">Area</div>
+                    <select name="" id="" class="filter-select" onclick="alert('Select Property Area')">
+                        <option value="">5 Marla</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <section class="agent-availible-house-items">
+            <div class="items">
+                <div class="item">
+                    <div class="img-block">
+                        <img src="./images/house1.png" alt="House 1">
+                    </div>
+                    <div class="annotation">
+                        <div class="name">Full House</div>
+                        <div class="parameters">
+                            <div class="parameter">
+                                <img src="./images/bedroom.svg" alt="Baroom">
+                                Bedrooms
+                            </div>
+                            <div class="parameter">
+                                <img src="./images/area.svg" alt="Area">
+                                5 Marla
+                            </div>
+                        </div>
+                        <div class="detail" onclick="alert('Show Detail of this property')">Detail</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-block">
+                        <img src="./images/house2.png" alt="House 2">
+                    </div>
+                    <div class="annotation">
+                        <div class="name">Full House</div>
+                        <div class="parameters">
+                            <div class="parameter">
+                                <img src="./images/bedroom.svg" alt="Baroom">
+                                Bedrooms
+                            </div>
+                            <div class="parameter">
+                                <img src="./images/area.svg" alt="Area">
+                                5 Marla
+                            </div>
+                        </div>
+                        <div class="detail" onclick="alert('Show Detail of this property')">Detail</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal phase-modal" id="phase-modal" style="display:none">
+            <div class="modal-body phase-modal-body">
+                <div class="phase-modal">
+                    <div class="phase-item" onclick="onHideModal('#phase-modal')">DHA Phase 2</div>
+                    <div class="phase-item" onclick="onHideModal('#phase-modal')">DHA Phase 3</div>
+                    <div class="phase-item" onclick="onHideModal('#phase-modal')">DHA Phase 4</div>
+                    <div class="phase-item" onclick="onHideModal('#phase-modal')">DHA Phase 5</div>
+                </div>
+            </div>
+        </section>
+        <script defer
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+        <script defer src="./js/script.js"></script>
+    </body>
+</html>

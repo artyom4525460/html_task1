@@ -2,6 +2,7 @@
     background-color: $blue;
     padding-top: 170px;
     width: 100%;
+    color: #fff;
     @media screen and (max-width: $max-width){
         padding-top: 15.11vw;
     }
@@ -32,6 +33,7 @@
         display: flex;
         justify-content: center;
         position: relative;
+        color: #fff;
         .location{
             font-size: 40px;
             color: #ffffff;
