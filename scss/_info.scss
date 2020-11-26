@@ -97,6 +97,14 @@
     }
 
     hr{
+        border: 0;
         border-top: 5px solid #edf0f2;
+        margin: 0;
+        margin-left: -55px;
+        margin-right: -55px;
+        @media screen and (max-width: $max-width){
+            margin-left: -4.88vw;
+            margin-right: -4.88vw;
+        }
     }
 }

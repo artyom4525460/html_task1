@@ -8,7 +8,7 @@
         padding-bottom: 8.88vw;
     }
     .popular-item{
-        width: 650px;
+        width: 650px !important;
         border-radius: 30px;
         filter: drop-shadow(0px 3px 23px rgba(0,0,0,0.08));
         background-color: #ffffff;
@@ -17,7 +17,7 @@
         margin-right: 30px;
         margin-top: 20px;
         @media screen and (max-width: $max-width){
-            width: 57.77vw;
+            width: 57.77vw !important;
             border-radius: 2.66vw;
             filter: drop-shadow(0px 0.26vw 2.04vw rgba(0,0,0,0.08));
             margin-right: 2.66vw;

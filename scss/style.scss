@@ -1,3 +1,5 @@
+@import "../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../node_modules/slick-carousel/slick/slick.scss";
 @import "./_default.scss";
 @import "./_controls";
 @import "./_header.scss";
@@ -8,5 +10,3 @@
 @import "./_info.scss";
 @import "./_profile.scss";
 @import "./_modal.scss";
-@import "./_surveryor.scss";
-@import "./_agent.scss";

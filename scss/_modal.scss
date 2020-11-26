@@ -8,6 +8,10 @@
     justify-content: center;
     background-color: rgba(0,0,0,0.3);
     overflow: scroll;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, 0);
+    overflow: hidden;
     .modal-body{
         width: 100%;
         padding: 22px 22px 155px;

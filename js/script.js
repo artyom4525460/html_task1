@@ -1,22 +1,25 @@
-function showMenu() {
-    alert("show menu")
-}
+import $ from 'jquery'
+import 'slick-carousel'
 
-function getSearch(event){
-    if(event == 'search' || event.keyCode == 13){
-        let category = ['grocery', 'pharmacy']
-        let input = $('input[name="search"]').val()
-        if(category.includes(input)){
-            alert(input)
-        }
-        else{
-            alert(false)
-        }
+$('#search-button').click(function(){
+    search()
+})
+
+$('input[name="search"]').on('keypress',function(e) {
+    if(e.which == 13) {
+        search()
     }
-}
+});
 
-function viewCategory(){
-    alert("View Category")
+let search = () => {
+    let category = ['grocery', 'pharmacy']
+    let input = $('input[name="search"]').val()
+    if(category.includes(input)){
+        alert(input)
+    }
+    else{
+        alert(false)
+    }
 }
 
 $('.category-item').click(function(){
@@ -24,14 +27,60 @@ $('.category-item').click(function(){
     alert(category)
 })
 
-function onCall(){
-    alert('call now')
-}
+$('#close-images-modal').click(function(){
+    $('#images-modal').hide()
+})
 
-function onHideModal(selector){
-    $(selector).hide();
-}
+$('#close-request-modal').click(function(){
+    $('#request-modal').hide()
+})
 
-function onShowModal(selector){
-    $(selector).show();
-}
+$('.show-images-modal').click(function(){
+    $('#images-modal').show()
+})
+
+$('.show-request-modal').click(function(){
+    $('#request-modal').show()
+})
+
+$('#slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //adaptiveHeight: true
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
+})
+
+$('#slider-category').slick({
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    //adaptiveHeight: true
+    variableWidth: true,
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
+})
+
+
+$('#slider-popular').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //adaptiveHeight: true
+    variableWidth: true,
+    dots: false,
+    prevArrow: false,
+    nextArrow: false
+})
+
+$('#top-full-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    prevArrow: false,
+    nextArrow: false
+})
